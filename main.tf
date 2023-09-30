@@ -28,7 +28,7 @@ resource "azurerm_role_assignment" "core" {
 }
 
 data "azurerm_subscription" "customer" {
-  subscription_id = "0fe93796-994e-4f38-8b85-22d7bd25753f"
+  subscription_id = "complete-this"
 }
 
 resource "azurerm_role_assignment" "customer" {
