@@ -9,5 +9,4 @@ aad_subscription_id = "complete-this"
 # -------------------
 # Terraform Variables
 # -------------------
-
 azure_service_principal_display_name = "Terraform DBX"
