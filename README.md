@@ -1,4 +1,4 @@
-# How to Deploy an Azure Service Principal with Terraform
+# How to Deploy an Azure Service Principal for Terraform using Terraform
 [![Terraform](https://img.shields.io/badge/terraform-v1.5+-blue.svg)](https://www.terraform.io/downloads.html)
 
 ## How To Deploy the Code:
