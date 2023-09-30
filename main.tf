@@ -17,22 +17,12 @@ resource "azuread_service_principal_password" "this" {
   rotate_when_changed  = { rotation = time_rotating.month.id }
 }
 
-# Assign the Service Principal to the Subscription Owner Role
+# Assign the Service Principal to the Subscription Owner's Role
 
 data "azurerm_subscription" "core" {}
 
 resource "azurerm_role_assignment" "core" {
   scope = data.azurerm_subscription.core.id
-  role_definition_name = "Owner"
-  principal_id = azuread_service_principal.this.object_id
-}
-
-data "azurerm_subscription" "customer" {
-  subscription_id = "complete-this"
-}
-
-resource "azurerm_role_assignment" "customer" {
-  scope = data.azurerm_subscription.customer.id
   role_definition_name = "Owner"
   principal_id = azuread_service_principal.this.object_id
 }
